@@ -27,7 +27,7 @@ function sumArray(array) {
   for (const index in array) {
     total += array[index];
   }
-  console.log(total)
+  return total;
 }
 
 console.log("Завдання 2 ====================================");
@@ -43,7 +43,7 @@ function multiplyArray(array) {
   for (const index of array) {
     total *= index;
   }
-  console.log(total)
+  return total;
 }
 
 console.log("Завдання 3 ====================================");
@@ -172,7 +172,7 @@ function swapMinMax(array) {
   }
   array[maxIndex] = min;
   array[minIndex] = max;
-  console.log(array);
+  return array;
 }
 
 console.log("Завдання 10 ====================================");
@@ -194,7 +194,7 @@ function getEvenNumbers(arr) {
       ++i;
     }
   }
-  console.log(Newarr);
+  return Newarr;
 }
 console.log("Завдання 11 ====================================");
 console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // Виведе [2, 4, 6]
@@ -209,7 +209,7 @@ function multiplyByIndex(arr) {
   for (const index in arr) {
     Newarr[index] = arr[index] * index;
   }
-  console.log(Newarr);
+  return Newarr;
 }
 console.log("Завдання 12 ====================================");
 console.log(multiplyByIndex([1, 2, 3, 4, 5])); // Виведе [0, 2, 6, 12, 20]
@@ -231,7 +231,7 @@ function replaceNumbers(arr) {
       Newarr[index] = "Less than or equal to 10";
     }    
   }
-  console.log(Newarr);
+  return Newarr;
 }
 
 console.log("Завдання 13 ====================================");
